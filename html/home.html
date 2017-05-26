@@ -1,0 +1,38 @@
+<div class="parallaxPhoto">
+    <div class="welcomediv">U-20 World Cup South Korea 2017</div>
+</div>
+<div class="standings">Current Standings</div>
+<div class="groupsWrapper">
+    <table class="groupContainer" ng-repeat="group in groups"><caption>{{group.groupName}}</caption>
+        <tr>
+            <th>Place</th>
+            <th>Country</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img ng-src={{group.team1Flag}}>{{group.teamName1}}</td>
+            <td>{{group.team1Pts}}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img ng-src={{group.team2Flag}}>{{group.teamName2}}</td>
+            <td>{{group.team2Pts}}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img ng-src={{group.team3Flag}}>{{group.teamName3}}</td>
+            <td>{{group.team3Pts}}</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img ng-src={{group.team4Flag}}>{{group.teamName4}}</td> 
+            <td>{{group.team4Pts}}</td>
+        </tr>
+    </table>
+
+</div>
+<div class="modalwrapper" ng-show='show' >
+    <p class='close' ng-click="show=!show">X</p>
+    <p>Country Name: {{games[0].name}}</p>
+</div>

@@ -1,0 +1,34 @@
+$primary-color: goldenrod;
+
+   .navbar {
+      background-color:rgba(0,0,0,0.5);
+      color: white;
+      position: fixed;
+      height: 100px;
+      width: 100%;
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a:link, a:visited {
+          text-decoration: none;
+          color: $primary-color;
+          font-size: 20px;
+      }
+
+  }
+  html, body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .wcicon {
+      border-radius: 50%;
+      height: 90px;
+      width: 100px;
+      background-image: none
+  }
+
+
+
+
+
