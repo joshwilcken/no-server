@@ -21,9 +21,6 @@ angular.module('u20WorldCup')
     console.log($scope.groups)
 
 
-    
-    $scope.show = false
-
 
 
 })

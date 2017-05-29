@@ -1,9 +1,41 @@
 .parallaxSeoul { 
-    background-image: url("../images/Seoul.jpg");
+  background-image: url("../images/Seoul.jpg");
   height: 600px;
   width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: white;
+}
+
+.hostTitle {
+  height: 100px;
+  font-size: 30px;
+  color: goldenrod;
+  	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.container {
+  width: 100vw;
+  height: 500px;
 }

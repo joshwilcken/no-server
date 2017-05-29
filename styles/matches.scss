@@ -1,0 +1,27 @@
+.scoreWrapper {
+    height: 100px;
+}
+
+.scoreContainer {
+    background: red;
+    height: 50px;
+    width: 100vw;
+    font-size: 20px;
+ 	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+.videoContainer {
+    width: 560px; /* you have to have a size or this method doesn't work */
+    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
+}
+

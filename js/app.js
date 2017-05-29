@@ -11,9 +11,10 @@ angular.module('u20WorldCup', ['ui.router'])
             templateUrl: './html/home.html',
             controller: 'homecontroller'
         })
-        .state('matches-results', {
-            url: '/matches-results',
-            templateUrl: './html/matches-results.html'
+        .state('matches', {
+            url: '/matches',
+            templateUrl: './html/matches.html',
+            controller: 'matchesController'
         })
         .state('knockout', {
             url: '/knockout',
