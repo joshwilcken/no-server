@@ -1,18 +1,49 @@
 .scoreWrapper {
     height: 100px;
+    
+}
+
+.headerContainer {
+    font-size: 20px;
+    color: goldenrod;
+ 	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 }
 
 .scoreContainer {
-    background: red;
-    height: 50px;
+    height: 40px;
     width: 100vw;
     font-size: 20px;
  	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	align-content: stretch;
+}
+
+.searchBox {
+    height: 30px;
+}
+
+.homeTeam {
+    width: 200px;
+}
+
+.score {
+    width: 200px;
+}
+
+.awayTeam {
+    width: 200px;
+}
+
+.highlights {
+    width: 200px;
 }
 
 .videoContainer {

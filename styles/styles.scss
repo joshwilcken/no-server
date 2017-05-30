@@ -6,6 +6,7 @@ $primary-color: goldenrod;
       position: fixed;
       height: 100px;
       width: 100%;
+      z-index: 1000;
       font-family: 'Open Sans', sans-serif;
       display: flex;
       justify-content: space-around;

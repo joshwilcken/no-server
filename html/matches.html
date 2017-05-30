@@ -1,8 +1,16 @@
 <div class="scoreWrapper"></div>
-<div class="scoreContainer" ng-repeat="game in games">
-    <div>{{game.game1.home}}</div>
-    <div>{{game.game1.score}}</div>
-    <div>{{game.game1.away}}</div>
+<input class="searchBox" ng-model="filterTeams" type="text" placeholder="Search by Country">
+<div class="headerContainer">
+    <div class="homeTeam">Home</div>
+    <div class="score">Score</div>
+    <div class="awayTeam">Away</div>
+    <div class="highlights">Highlights</div>
+</div>
+<div class="scoreContainer" ng-repeat="game in games | filter: filterTeams">
+    <div class="homeTeam">{{game.home}}</div>
+    <div class="score">{{game.score}}</div>
+    <div class="awayTeam">{{game.away}}</div>
+    <div class="highlights"><a target="_blank" href="{{game.highlights}}"><i class="icon-facetime-video"></i></a></div>
 </div>
 
 
